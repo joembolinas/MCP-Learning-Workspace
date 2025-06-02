@@ -1,0 +1,57 @@
+{
+  "servers": {
+    "github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server:v0.1.1"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
+      }    },    "filesystem": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "mcp/filesystem",
+        "{{filesystem.paths|volume-target|into}}"
+      ]
+    },
+    "memory": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "/local-directory:/local-directory",
+        "mcp/memory"
+      ]
+    },
+    "my-mcp-server-40bff868": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "/path/to/local-directory:/path/to/local-directory",
+        "mcp/memory"
+      ]
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "github_token",
+      "description": "GitHub Personal Access Token",
+      "password": true
+    }
+  ]
+}
+
