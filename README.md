@@ -1,6 +1,6 @@
 # My MCP Learning Journey
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-MCP--Learning--Workspace-blue?style=flat-square&logo=github)](https://github.com/ADMIN/MCP-Learning-Workspace)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-MCP--Learning--Workspace-blue?style=flat-square&logo=github)](https://github.com/joembolinas/MCP-Learning-Workspace)
 [![Learning Progress](https://img.shields.io/badge/Progress-Week%201-green?style=flat-square)](#)
 [![MCP Version](https://img.shields.io/badge/MCP-Latest-orange?style=flat-square)](#)
 

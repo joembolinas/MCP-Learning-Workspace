@@ -82,7 +82,7 @@
 - 🎯 **Next:** Start Phase 1 - Learn MCP basics
 
 ### GitHub Repository
-- **Repository**: https://github.com/ADMIN/MCP-Learning-Workspace
+- **Repository**: https://github.com/joembolinas/MCP-Learning-Workspace
 - **Published**: June 3, 2025
 - **Status**: Public repository with complete learning workspace
 - **Purpose**: Track MCP learning journey and share progress with community
